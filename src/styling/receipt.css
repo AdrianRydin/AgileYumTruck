@@ -4,11 +4,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #605858;
-    min-height: 100vh;
-  }
-  
   .header-placeholder {
     background-color: black;
     width: 100%;
@@ -16,6 +11,7 @@
   }
   
   main {
+    background-color: #605858;
     color: #353131;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
@@ -24,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
+    min-height: calc(100vh - 110px);
   }
   
   .receipt {
