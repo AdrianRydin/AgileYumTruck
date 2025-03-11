@@ -1,20 +1,13 @@
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
     min-height: 100vh;
 }
-
-
 /* -----header----- */
-
-
 .header {
     padding: 1rem;
     display: flex;
@@ -28,12 +21,10 @@ body {
     background: #fff;
     height: 110px;
 }
-
 .header__logo {
     cursor: pointer;
     text-decoration: none;
 }
-
 .header__menu {
     font-size: 2rem;
     color: #605858;
@@ -44,7 +35,6 @@ body {
 .header_menu:focus {
     transform: scale(1.3);
 }
-
 /* ----overlay---- */
 .header__overlay {
     display: flex;
@@ -53,7 +43,6 @@ body {
     align-items: center;
     border-bottom: 1px solid rgb(255, 255, 255);
     height: 110px;
-
 }
 .overlay {
     background: #696666;
@@ -76,14 +65,11 @@ body {
 .header__cross:focus {
     transform: scale(1.3);
 }
-
 .overlay__logo {
     width: 70px;
     cursor: pointer;
 }
-
 /* ----overlay menu---- */
-
 .overlay__list {
     display: flex;
     flex-direction: column;
@@ -91,7 +77,6 @@ body {
     margin-top: 3rem;
     border-bottom: 1px solid rgb(255, 252, 252);
 }
-
 .overlay__list-links {
     list-style: none;
     margin-left: 1rem;
@@ -101,7 +86,7 @@ body {
     transform: scale(1.07);
 }
 .overlay__list-links:last-child {
-    margin-bottom: 1.7rem;
+    margin-bottom: 2.3rem;
 }
 .overlay__list-items {
     text-decoration: none;
@@ -109,11 +94,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    
 }
-
 .overlay-active {
-    
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
