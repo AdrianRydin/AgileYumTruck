@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/styling/navigation.css"></link>
     <link rel="stylesheet" href="../src/styling/index.css" />
+    <script type="module" src="../navigation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +21,42 @@
     <title>Yum Yum Gimmie Sum</title>
   </head>
   <body>
+    
+        <header class="header">
+        <a href="#">
+            <img class="header__logo" src="../public/images/logoVariant1small.png">
+        </a>
+        <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
+    </header>
+
+    <nav aria-label="overlay for navigation"  class="overlay">
+        <section class="header__overlay">
+            <a href="#">
+                <img class="overlay__logo" src="../public/images/logo2.png">
+            </a>
+            <i class="header__cross fa-solid fa-xmark"></i>
+        </section>
+    
+        <section class="overlay__list">
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Hem</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Vår mat</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Kontakta oss</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Om oss</a>
+        </li>
+        
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Logga in</a>
+        </li>
+        </section>
+    </nav>
+    
     <main>
       <section class="todays-business-hours">
         <h1 class="todays-business-hours__text">ÖPPET IDAG:</h1>
@@ -136,4 +176,3 @@
     </footer>
   </body>
 </html>
-
