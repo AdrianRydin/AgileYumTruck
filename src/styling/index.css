@@ -70,7 +70,7 @@
   .footer {
     display: flex;
     justify-content: center;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     letter-spacing: 2px;
     color: white;

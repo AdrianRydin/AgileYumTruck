@@ -10,10 +10,45 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styling/navigation.css"></link>
     <link rel="stylesheet" href="./styling/receipt.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="header-placeholder"></div>
+    <header class="header">
+      <a href="../public/index.html">
+          <img class="header__logo" src="../public/images/whiteLogo2.png">
+      </a>
+      <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
+  </header>
+
+  <nav aria-label="overlay for navigation"  class="overlay">
+      <section class="header__overlay">
+          <a href="#">
+              <img class="overlay__logo" src="../public/images/logo2.png">
+          </a>
+          <i class="header__cross fa-solid fa-xmark"></i>
+      </section>
+  
+      <section class="overlay__list">
+      <li class="overlay__list-links">
+          <a class="overlay__list-items" href="../public/index.html">Hem</a>
+      </li>
+      <li class="overlay__list-links">
+          <a class="overlay__list-items" href="mat.meny.html">Vår mat</a>
+      </li>
+      <li class="overlay__list-links">
+          <a class="overlay__list-items" href="../public/index.html#footer">Kontakta oss</a>
+      </li>
+      <li class="overlay__list-links">
+          <a class="overlay__list-items" href="#">Om oss</a>
+      </li>
+      
+      <li class="overlay__list-links">
+          <a class="overlay__list-items" href="login.html">Logga in</a>
+      </li>
+      </section>
+  </nav>
     <main>
       <article class="receipt">
         <img
@@ -68,7 +103,7 @@
           <h3 class="receipt__total-price">101 SEK</h3>
         </div>
       </article>
-      <a href="mat.meny.html"><button class="order-button">GÖR EN NY BESTÄLLNING</button></a>
+      <a href="mat.meny.html" class="order-button-container"><button class="order-button">GÖR EN NY BESTÄLLNING</button></a>
     </main>
   </body>
 </html>

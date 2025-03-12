@@ -9,8 +9,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
 
+}
+.header{
+    width: 100%;
 }
 
 
@@ -22,11 +24,7 @@ main{
   'opsz' 24
 }
 
-.header-placeholder{
-    height:110px;
-    width: 100%;
-    background-color: black;
-}
+
 
 .order-summary-container{
     max-height: 70vh;

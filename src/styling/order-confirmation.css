@@ -13,14 +13,6 @@ main{
     justify-content: space-between;
 }
 
-
-
-.header-placeholder{
-    height: 110px;
-    width: 100%;
-    /* background-color: black; */
-}
-
 .confirmation-container{
     display: flex;
     flex-direction: column;
@@ -74,4 +66,16 @@ main{
     border: 1px solid white;
     border-radius: 5px;
     color: hsl(30, 7%, 94%, 0.94);
+}
+.receipt-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    background: #605858;
+    border: none;
+}
+#header__menu{
+    display: none;
 }

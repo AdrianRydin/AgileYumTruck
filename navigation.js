@@ -13,11 +13,9 @@ headerCrossBtn.addEventListener("click", handleCrossBtn)
 
 //funktioner för event
 function handleHamburgerBtn() {
-    header.classList.add("header-hidden")
     overlay.classList.add("overlay-active")
 }
 function handleCrossBtn() {
-   header.classList.remove("header-hidden")
    overlay.classList.remove("overlay-active")
 }
 
