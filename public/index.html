@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styling/index.css" />
-    <link rel="stylesheet" href="./styling/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/styling/navigation.css"></link>
+    <link rel="stylesheet" href="../src/styling/index.css" />
+    <script type="module" src="../navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Yum Yum Gimmie Sum</title>
   </head>
-  <body></body>
+  <body>
+    
+        <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="../public/images/logoVariant1small.png">
+        </a>
+        <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
+    </header>
+
+    <nav aria-label="overlay for navigation"  class="overlay">
+        <section class="header__overlay">
+            <a href="#">
+                <img class="overlay__logo" src="../public/images/logo2.png">
+            </a>
+            <i class="header__cross fa-solid fa-xmark"></i>
+        </section>
+    
+        <section class="overlay__list">
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="index.html">Hem</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="../src/mat.meny.html">Vår mat</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#footer">Kontakta oss</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Om oss</a>
+        </li>
+        
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="../src/login.html">Logga in</a>
+        </li>
+        </section>
+    </nav>
+    
+    <main>
+      <section class="todays-business-hours">
+        <h1 class="todays-business-hours__text">ÖPPET IDAG:</h1>
+      </section>
+      <img
+        class="img-full-width"
+        src="./images/landing/truckImage.png"
+        alt="En foodtruck med två glada arbetare"
+      />
+      <a href="../src/mat.meny.html"><button class="food-menu-btn">BESTÄLL MAT</button></a>
+      <section class="about-us width-90-percent">
+        <h2 class="ubuntu-heading">ABOUT US</h2>
+        <p class="about-us__text">
+          VÄLKOMMEN TILL YUM YUM GIMME SUM <br />PLATSEN DÄR SMAK MÖTER PASSION!
+          VI TROR ATT GOD MAT FÖR MÄNNISKOR SAMMAN, SKAPAR GLÄDJE OCH GER MINNEN
+          FÖR LIVET.
+        </p>
+      </section>
+      <div class="food-slideshow">
+        <div class="food-slideshow__container">
+          <div class="food-slideshow__slide">
+            <img
+              class="img-full-width"
+              src="./images/landing/landingFood1.png"
+              alt="En tallrik med mat"
+            />
+          </div>
+          <!-- <div class="food-slideshow__slide">
+            <img
+              class="img-full-width"
+              src="./images/landing/landingFood2.png"
+              alt="En tallrik med mat"
+            />
+          </div>
+          <div class="food-slideshow__slide">
+            <img
+              class="img-full-width"
+              src="./images/landing/landingFood3.png"
+              alt="En tallrik med mat"
+            />
+          </div>
+          <div class="food-slideshow__slide">
+            <img
+              class="img-full-width"
+              src="./images/landing/landingFood4.png"
+              alt="En tallrik med mat"
+            />
+          </div>
+          <div class="food-slideshow__slide">
+            <img
+              class="img-full-width"
+              src="./images/landing/landingFood5.png"
+              alt="En tallrik med mat"
+            />
+          </div> -->
+        </div>
+      </div>
+      <section class="business-hours width-90-percent">
+        <h2 class="ubuntu-heading">ÖPPETTIDER</h2>
+        <h3 class="ubuntu-sub-heading">VARDAGAR</h3>
+        <p class="business-hours__text">MÅN - FRE, 12:00 - 22:00</p>
+        <h3 class="ubuntu-sub-heading">HELGER</h3>
+        <p class="business-hours__text">LÖRDAGAR OCH SÖNDAGAR, 15:00 - 17:00</p>
+      </section>
+      <img
+        class="img-full-width"
+        src="./images/landing/landingFood6.png"
+        alt="Mat som tillagas"
+      />
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <img class="footer__logo" src="./images/logo.png" alt="" />
+        <h2 class="footer__heading">KONTAKTA OSS</h2>
+        <address class="footer__address">
+          <p class="footer__text">073 - 213 4255</p>
+          <h3 class="footer__sub-heading">ADRESS</h3>
+          <p class="footer__text">AXENBORGSGATAN 5</p>
+          <p class="footer__text">ESKILSTUNA 581 23</p>
+        </address>
+        <div class="footer__social-media">
+          <a
+            class="footer__icon-link"
+            href="https://www.tiktok.com"
+            target="_blank"
+          >
+            <img
+              class="footer__icon"
+              src="./images/footer/instagram.png"
+              alt="Tiktok icon"
+            />
+          </a>
+          <a
+            class="footer__icon-link"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <img
+              class="footer__icon"
+              src="./images/footer//tiktok.png"
+              alt="Instagram icon"
+            />
+          </a>
+          <a
+            class="footer__icon-link"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <img
+              class="footer__icon"
+              src="./images/footer/facebook.png"
+              alt="Facebook icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

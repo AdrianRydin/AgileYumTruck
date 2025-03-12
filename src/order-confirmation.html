@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styling/navigation.css"></link>
+    <link rel="stylesheet" href="./styling/order-confirmation.css">
+    <link rel="stylesheet" href="./styling/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Yum Yum Gimmie Sum - Order Confirmation</title>
+    <script type="module" src="../navigation.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../public/index.html">
+            <img class="header__logo" src="../public/images/logo2.png">
+        </a>
+        <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
+    </header>
+
+    <nav aria-label="overlay for navigation"  class="overlay">
+        <section class="header__overlay">
+            <a href="../public/index.html">
+                <img class="overlay__logo" src="../public/images/logo2.png">
+            </a>
+            <i class="header__cross fa-solid fa-xmark"></i>
+        </section>
+    
+        <section class="overlay__list">
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="../public/index.html">Hem</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="mat.meny.html">Vår mat</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="../public/index.html">Kontakta oss</a>
+        </li>
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="#">Om oss</a>
+        </li>
+        
+        <li class="overlay__list-links">
+            <a class="overlay__list-items" href="login.html">Logga in</a>
+        </li>
+        </section>
+    </nav>
+
+    <main>
+
+        <article class="confirmation-container">
+            <img src="../public/images/boxtop.png" alt="En bild på en matlåda" class="boxtop">
+            <section class="confirmation-text">
+                <h1 class="fira-sans-bold">Dina wontons tillagas!</h1>
+                <h2 class="fira-sans-semibold">ETA 5 min</h2>
+                <h3 class="fira-sans-light">#4KJWSDF234K</h3>
+            </section>
+
+        </article>
+
+        <section class="confirmation-button-container">
+            <div class="new-order-button" alt="Knapp för att göra en ny beställning">
+                <h1 class="fira-sans-bold">Gör en ny beställning</h1>
+            </div>
+
+            <div class="receipt-button" alt="Knapp för att se kvitto">
+                <a href="receipt.html"><h1 class="fira-sans-bold">Se kvitto</h1></a>
+            </div>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
