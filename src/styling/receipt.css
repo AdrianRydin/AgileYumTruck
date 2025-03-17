@@ -8,9 +8,9 @@
   background: #605858;
   border: none;
 }
-#header__menu {
+
+.header__menu {
   color: white;
-  font-size: 2.5rem;
 }
 
 main {
