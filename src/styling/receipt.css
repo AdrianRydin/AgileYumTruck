@@ -113,7 +113,7 @@ main {
 
 .order-button-container {
   width: 90%;
-  max-width: 550px;
+  /* max-width: 550px; */
 }
 
 .order-button {
