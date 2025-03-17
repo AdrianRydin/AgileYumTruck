@@ -17,7 +17,11 @@
     background-color: #dda900;
     padding: 1rem;
   }
-  
+
+  .slide {
+    transition: opacity 0.8s ease-in-out;
+  }
+
   .img-full-width {
     width: 100%;
     height: auto;
