@@ -23,14 +23,6 @@
     height: auto;
     display: block;
   }
-
-
-.food-slideshow img {
-    width: 100%;
-    object-fit: cover; /* Säkerställer att bilden täcker hela området */
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
-}
   
   .todays-business-hours__text {
     font-size: 1rem;
