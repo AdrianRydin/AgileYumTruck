@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`Välkommen, ${user.username}! Du är inloggad som ${user.role}.`);
 
       setTimeout(() => {
-        window.location.assign("/public/index.html");
+        window.location.assign("/index.html");
       }, 100);
     } else {
       alert("Fel användarnamn eller lösenord.");
@@ -64,6 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     alert("Du fortsätter som gäst.");
     localStorage.setItem("loggedInUser", JSON.stringify({ role: "guest" }));
-    window.location.assign("/public/index.html");
+    window.location.assign("/index.html");
   });
 });
