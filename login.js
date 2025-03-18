@@ -1,8 +1,13 @@
+import oData from "./src/js/utils/oData.js"
+
 document.addEventListener("DOMContentLoaded", () => {
   const usernameInput = document.querySelector("input[type='text']");
   const passwordInput = document.querySelector("input[type='password']");
   const loginButton = document.querySelector(".btn-login");
   const guestButton = document.querySelector(".btn-guest");
+
+  let users = []
+
 
   const API_URL = "https://santosnr6.github.io/Data/yumyumusers.json";
 
@@ -36,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const users = await fetchUsers();
+    let users = await fetchUsers();
 
     if (!Array.isArray(users)) {
       console.error("User data is not an array:", users);
@@ -49,11 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (user) {
-      localStorage.setItem("loggedInUser", JSON.stringify(user));
+      localStorage.setItem(`${user.username}`, JSON.stringify(user));
       alert(`Välkommen, ${user.username}! Du är inloggad som ${user.role}.`);
 
+
+      sessionStorage.setItem('status', 'loggedIn')
+
       setTimeout(() => {
-        window.location.assign("/public/index.html");
+        window.location.assign("../index.html");
       }, 100);
     } else {
       alert("Fel användarnamn eller lösenord.");

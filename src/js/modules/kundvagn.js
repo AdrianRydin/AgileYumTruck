@@ -1,3 +1,5 @@
+import oData from "../utils/oData.js"
+
 // När sidan har laddats, hämta varor från kundvagnen och uppdatera sidan
 document.addEventListener("DOMContentLoaded", () => {
     loadCartItems(); // Ladda in varorna i kundvagnen vid sidstart
@@ -84,11 +86,23 @@ function updateQuantity(index, change) {
 
 // tömma hela kundvagnen när "TAKE MY MONEY!" knappen klickas
 document.getElementById("clear-cart").addEventListener("click", () => {
-    let order = localStorage.getItem('cart')
-    let userOrders = localStorage.getItem('userOrder')
-    userOrders.push(order);
-    localStorage.getItem(userOrders)
+    if(sessionStorage.getItem('status') !== null) {
+
+        let users = JSON.parse(localStorage.getItem("jesperdaking")) || [];
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let updatedUser = Object.values(users);
+        updatedUser.push(cart)
+        console.log(updatedUser)
+
+        localStorage.setItem('jesperdaking-ls', JSON.stringify(updatedUser))
+
+    
+      }
+
 
     localStorage.removeItem("cart"); // Ta bort alla varor från localStorage
     loadCartItems(); // Uppdatera UI för att visa en tom kundvagn
+
 });
+
+
