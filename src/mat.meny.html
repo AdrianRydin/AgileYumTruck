@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mat meny</title>
    <link rel="stylesheet" href="styling/mat.meny.css">
+   <script type="module" src="../orders.js"></script>
 </head>
 <body>
     <header class="header_container">
         <a href="../index.html">
             <img class="mat_meny-logo" src="../public/images/whiteLogo2.png" alt="Mat meny logo">
         </a>
-        <a href="kundvagn.html">
+        <a href="kundvagn.html" class="cart-container">
         <img class="kundvagn" src="../public/images/kundvagn.png" alt="kundvagn logo">
+        <span id="cart-badge">0</span>
         </a>
     </header>
     <main>
@@ -25,9 +27,9 @@
             <div class="food_item--1">
             <img class="food_item-img" src="../public/images/food/food1.png" alt="food item 1">
             <div class="counter">
-                <button id="decrement">-</button>
-                <span id="count">0</span>
-                <button id="increment">+</button>
+                <button class="decrement">-</button>
+                <span class="count">0</span>
+                <button class="increment">+</button>
             </div>
         </div>
         <div class="food_item--1--discription">
@@ -43,9 +45,9 @@
     <section class="food_item--2-container">
         <div class="food_item--2">
         <div class="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
+            <button class="decrement">-</button>
+            <span class="count">0</span>
+            <button class="increment">+</button>
         </div>
         <img class="food_item-img" src="../public/images/food/food2.png" alt="food item 1">
     </div>
@@ -64,9 +66,9 @@
     <div class="food_item--1">
     <img class="food_item-img" src="../public/images/food/food3.png" alt="food item 1">
     <div class="counter">
-        <button id="decrement">-</button>
-        <span id="count">0</span>
-        <button id="increment">+</button>
+        <button class="decrement">-</button>
+        <span class="count">0</span>
+        <button class="increment">+</button>
     </div>
 </div>
 <div class="food_item--1--discription">
@@ -82,9 +84,9 @@
 <section class="food_item--2-container">
     <div class="food_item--2">
     <div class="counter">
-        <button id="decrement">-</button>
-        <span id="count">0</span>
-        <button id="increment">+</button>
+        <button class="decrement">-</button>
+        <span class="count">0</span>
+        <button class="increment">+</button>
     </div>
     <img class="food_item-img" src="../public/images/food/food4.png" alt="food item 1">
 </div>
@@ -103,9 +105,9 @@
     <div class="food_item--1">
     <img class="food_item-img" src="../public/images/food/food5.png" alt="food item 1">
     <div class="counter">
-        <button id="decrement">-</button>
-        <span id="count">0</span>
-        <button id="increment">+</button>
+        <button class="decrement">-</button>
+        <span class="count">0</span>
+        <button class="increment">+</button>
     </div>
 </div>
 <div class="food_item--1--discription">
@@ -121,9 +123,9 @@
 <section class="food_item--2-container">
     <div class="food_item--2">
     <div class="counter">
-        <button id="decrement">-</button>
-        <span id="count">0</span>
-        <button id="increment">+</button>
+        <button class="decrement">-</button>
+        <span class="count">0</span>
+        <button class="increment">+</button>
     </div>
     <img class="food_item-img" src="../public/images/food/food6.png" alt="food item 1">
 </div>
@@ -137,5 +139,6 @@
 </div>
 </section>
     </main>
+    
 </body>
 </html>
