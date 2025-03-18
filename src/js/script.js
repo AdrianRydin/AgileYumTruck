@@ -44,6 +44,20 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     // Hämta beställningen från localStorage
     // Visa pris, namn på produkten/produkter, antal för varje produkt, totalpris och referensnummret
+    
+    // [
+    //     {
+    //         Username,
+    //         Orders:[
+    //             {
+
+    //             },
+    //             {
+
+    //             }
+    //         ]
+    //     }
+    // ]
 
     
 

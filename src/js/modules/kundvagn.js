@@ -84,6 +84,11 @@ function updateQuantity(index, change) {
 
 // tömma hela kundvagnen när "TAKE MY MONEY!" knappen klickas
 document.getElementById("clear-cart").addEventListener("click", () => {
+    let order = localStorage.getItem('cart')
+    let userOrders = localStorage.getItem('userOrder')
+    userOrders.push(order);
+    localStorage.getItem(userOrders)
+
     localStorage.removeItem("cart"); // Ta bort alla varor från localStorage
     loadCartItems(); // Uppdatera UI för att visa en tom kundvagn
 });
