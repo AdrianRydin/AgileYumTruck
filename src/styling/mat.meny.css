@@ -92,7 +92,7 @@ header {
     color: white;
     border-radius: 10px;
 }
-#increment, #decrement {
+.increment, .decrement {
     font-size: 20px;
  
 }
@@ -155,6 +155,34 @@ button:hover {
     justify-content: flex-start; /* Aligns items to the left */
     width: 100%;
     gap: 1rem; /* Space between button and text */
+}
+
+/* Cart container to position badge correctly */
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling the cart image */
+.kundvagn {
+    width: 40px; /* Adjust size as needed */
+}
+
+/* Badge styling */
+#cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    display: none; /* Hide by default */
 }
 
 /* Mobile adjustments */
