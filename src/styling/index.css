@@ -32,6 +32,10 @@ main {
   font-size: 1rem;
 }
 
+ .slide {
+    transition: opacity 0.8s ease-in-out;
+}
+
 .food-menu-btn {
   background-color: #262626;
   color: white;
