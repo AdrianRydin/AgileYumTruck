@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/styling/navigation.css"></link>
     <link rel="stylesheet" href="./src/styling/index.css" />
+    <script type="module" src="./src/js/script.js"></script>
     <script type="module" src="./src/js/utils/navigation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +26,7 @@
     
         <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="./public/images/logoVariant1small.png">
+            <img class="header__logo" src="./public/images/logoVariant1small.png" alt="Yum Yum Gimme Sum Header logo">
         </a>
         <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
     </header>
@@ -33,7 +34,7 @@
     <nav aria-label="overlay for navigation"  class="overlay">
         <section class="header__overlay">
             <a href="#">
-                <img class="overlay__logo" src="./public/images/logo2.png">
+                <img class="overlay__logo" src="./public/images/logo2.png" alt="Yum Yum Gimme Sum Overlay logo">
             </a>
             <i class="header__cross fa-solid fa-xmark"></i>
         </section>
@@ -60,7 +61,7 @@
     
     <main>
       <section class="todays-business-hours">
-        <h1 class="todays-business-hours__text">ÖPPET IDAG:</h1>
+        <h1 class="todays-business-hours__text" id="todays-business-hours"></h1>
       </section>
       <img
         class="img-full-width"
@@ -77,50 +78,19 @@
         </p>
       </section>
       <div class="food-slideshow">
-        <div class="food-slideshow__container">
-          <div class="food-slideshow__slide">
-            <img
-              class="img-full-width"
-              src="./public/images/landing/landingFood1.png"
+
+            <img id="slide"
+              class="img-full-width slide"
+              src="/public/images/landing/landingFood1.png"
               alt="En tallrik med mat"
             />
-          </div>
-          <!-- <div class="food-slideshow__slide">
-            <img
-              class="img-full-width"
-              src="./images/landing/landingFood2.png"
-              alt="En tallrik med mat"
-            />
-          </div>
-          <div class="food-slideshow__slide">
-            <img
-              class="img-full-width"
-              src="./images/landing/landingFood3.png"
-              alt="En tallrik med mat"
-            />
-          </div>
-          <div class="food-slideshow__slide">
-            <img
-              class="img-full-width"
-              src="./images/landing/landingFood4.png"
-              alt="En tallrik med mat"
-            />
-          </div>
-          <div class="food-slideshow__slide">
-            <img
-              class="img-full-width"
-              src="./images/landing/landingFood5.png"
-              alt="En tallrik med mat"
-            />
-          </div> -->
-        </div>
       </div>
       <section class="business-hours width-90-percent">
         <h2 class="ubuntu-heading">ÖPPETTIDER</h2>
         <h3 class="ubuntu-sub-heading">VARDAGAR</h3>
-        <p class="business-hours__text">MÅN - FRE, 12:00 - 22:00</p>
+        <p class="business-hours__text">MÅN - FRE<br> 12:00 - 22:00</p>
         <h3 class="ubuntu-sub-heading">HELGER</h3>
-        <p class="business-hours__text">LÖRDAGAR OCH SÖNDAGAR, 15:00 - 17:00</p>
+        <p class="business-hours__text">LÖRDAGAR OCH SÖNDAGAR<br> 15:00 - 17:00</p>
       </section>
       <img
         class="img-full-width"
@@ -130,7 +100,7 @@
     </main>
     <footer class="footer" id="footer">
       <div class="footer__container">
-        <img class="footer__logo" src="./public/images/logo.png" alt="" />
+        <img class="footer__logo" src="./public/images/logo.png" alt="Yum Yum Gimme Sum Footer logo" />
         <h2 class="footer__heading">KONTAKTA OSS</h2>
         <address class="footer__address">
           <p class="footer__text">073 - 213 4255</p>
