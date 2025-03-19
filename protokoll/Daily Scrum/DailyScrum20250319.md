@@ -1,8 +1,4 @@
-[]: # Created: 2020-03-19 09:00
-
-# Mötesprotokoll (dagens datum)
-
-Sätt en timer på 15 minuter
+# Mötesprotokoll (2025-03-19)
 
 ## Närvarande
 
