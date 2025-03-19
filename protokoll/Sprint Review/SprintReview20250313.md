@@ -32,8 +32,6 @@ Sammanfatta vad ni presenterat, vilka kommentarer PO hade osv.
 - Vad tycker du att bilderna & de visuella elementen och om det passar hemsidan?
   Jättenöjd med bilderna, passar bra in i hemsidan.
 
-
-
 - Är textinnehållet relevant och intressant, finns det något du vill lägga till eller ta bort?
 - Är det något ni tycker att vi har gjort bra och som ni vill att vi ska fortsätta med?
 - Är det något ni vill att vi ska ändra på eller förbättra?
