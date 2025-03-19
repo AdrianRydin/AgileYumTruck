@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/styling/navigation.css"></link>
     <link rel="stylesheet" href="./src/styling/index.css" />
-    <script type="module" src="./src/js/utils/navigation.js"></script>
     <script type="module" src="./src/js/slideshow.js"></script>
+    <script type="module" src="./src/js/utils/navigation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,7 +54,7 @@
         </li>
         
         <li class="overlay__list-links">
-            <a class="overlay__list-items" href="./src/login.html">Logga in</a>
+            <a id="login-link" class="overlay__list-items" href="./src/login.html">Logga in</a>
         </li>
         </section>
     </nav>
@@ -81,7 +81,7 @@
 
             <img id="slide"
               class="img-full-width slide"
-              src="/public/images/landing/landingFood1.png"
+              src="./public/images/landing/landingFood1.png"
               alt="En tallrik med mat"
             />
       </div>
