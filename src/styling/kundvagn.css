@@ -76,8 +76,6 @@ main{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    
-
 }
 
 .order-total{
@@ -101,4 +99,36 @@ main{
 }
 .order-button a{
     color:white;
+}
+
+
+.order-payment-container {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 5rem; */
+    align-items: center;
+    font-family: fira sans, Helvetica, sans-serif;
+}
+
+.order-payment-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.payment-logos {
+    width: 55px;
+    cursor: pointer;
+}
+
+.fa-credit-card {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
 }
