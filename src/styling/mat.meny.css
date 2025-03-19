@@ -185,6 +185,15 @@ button:hover {
     display: none; /* Hide by default */
 }
 
+.fa-leaf {
+    color: rgb(75, 212, 75);
+    margin-top: 0.3rem;
+}
+.fa-pepper-hot {
+    color: rgb(184, 31, 31);
+    margin-top: 0.3rem;
+}
+
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
     .food_item--1 {
