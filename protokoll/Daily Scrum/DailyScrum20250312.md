@@ -4,10 +4,11 @@ Sätt en timer på 15 minuter
 
 ## Närvarande
 
-- Person 1 (ersätt med namn)
-- Person 2
-- Person 3
-  osv...
+- Rebin
+- Adrian
+- Axner
+- Embla
+- Hasan
 
 ## Protokoll
 
@@ -17,23 +18,11 @@ Var och en svarar på frågorna nedan, 1 person antecknar
 - Vad ska du göra idag?
 - Finns det några hinder?
 
-### Person 1 (ersätt med namn)
+### Gemensamt
 
--
--
--
-
-### Person 2 (ersätt med namn)
-
--
--
--
-
-### Person 3 (ersätt med namn)
-
--
--
--
+- Igår gjorde klart våra delar som vi skulle ha gjort klart för sprinten
+- idag ska vi sätta ihop alla delarna på github och se så att allting fungerar tillsammans inför Sprint Review.
+- Det kan uppstå konflikter men vi löser dem tillsammans.
 
 ### Övrigt
 
