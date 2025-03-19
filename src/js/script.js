@@ -1,3 +1,4 @@
+
 import { displayBusinessHours } from './todays-business-hours.js';
 import { initSlideshow } from './slideshow.js';
 
@@ -33,3 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Hämta beställningen från localStorage
   // Visa pris, namn på produkten/produkter, antal för varje produkt, totalpris och referensnummret
 });
+

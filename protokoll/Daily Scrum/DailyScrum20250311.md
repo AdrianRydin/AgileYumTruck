@@ -4,10 +4,11 @@ Sätt en timer på 15 minuter
 
 ## Närvarande
 
-- Person 1 (ersätt med namn)
-- Person 2
-- Person 3
-  osv...
+- Rebin
+- Adrian
+- Axner
+- Embla
+- Hasan
 
 ## Protokoll
 
@@ -17,23 +18,35 @@ Var och en svarar på frågorna nedan, 1 person antecknar
 - Vad ska du göra idag?
 - Finns det några hinder?
 
-### Person 1 (ersätt med namn)
+### Adrian
 
--
--
--
+- Höll på med kundvagn sidan, ETA-sidan, klar med dem.
+- Kolla igenom min kod och se till att det ser bra ut.
+- Nej inte just nu.
 
-### Person 2 (ersätt med namn)
+### Embla
 
--
--
--
+- Byggde kvittosidan & landningpage
+- Gå igenom koden och renskriva den.
+- Nej
 
-### Person 3 (ersätt med namn)
+### Axner
 
--
--
--
+- Jag skapade navigationsmenyn.
+- Fortsätta på navigationsmenyn.
+- Nej, inga hinder.
+
+### Hasan
+
+- Jobbade på matmeny sida, den är i princip klar.
+- Små justeringar för sidan så det blir bättre för user experience.
+- Nej inga alls.
+
+### Rebin
+
+- Skapade loginsida
+- Styla den och renskriva koden.
+- Nej inga hinder.
 
 ### Övrigt
 
