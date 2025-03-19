@@ -1,4 +1,4 @@
-# Mötesprotokoll (dagens datum)
+# Mötesprotokoll (2025-03-11)
 
 Sätt en timer på 15 minuter
 
@@ -11,8 +11,6 @@ Sätt en timer på 15 minuter
 - Hasan
 
 ## Protokoll
-
-Var och en svarar på frågorna nedan, 1 person antecknar
 
 - Vad gjorde du igår?
 - Vad ska du göra idag?
@@ -49,5 +47,3 @@ Var och en svarar på frågorna nedan, 1 person antecknar
 - Nej inga hinder.
 
 ### Övrigt
-
-Är det någon som behöver hjälp? Bestäm vem som hoppar in och stöttar

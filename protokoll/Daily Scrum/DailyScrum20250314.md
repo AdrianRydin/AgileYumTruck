@@ -1,6 +1,4 @@
-# Mötesprotokoll (dagens datum)
-
-Sätt en timer på 15 minuter
+# Mötesprotokoll (2025-03-14)
 
 ## Närvarande
 
