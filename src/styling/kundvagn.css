@@ -15,6 +15,23 @@ main{
     width: 100%;
 }
 
+.back-button{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
+    gap: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.back-button a{
+    text-decoration: none;
+    color: black;
+}
+.back-button i{
+    color:black;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:

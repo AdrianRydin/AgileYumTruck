@@ -14,27 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const refrenceNumber = createRandomString(10)    
       let referenceNumberRef = document.getElementById('referenceNumber');
       referenceNumberRef.textContent = "#" + refrenceNumber;
+    //   const totalItems = 
 
 
-
-    //   let orders = [
-    //     {
-    //         Name: "Karlstad",
-    //         Price: 59,
-    //         quantity: 2,
-    //     },
-    //     {
-    //         Name: "Hej",
-    //         Price: 250,
-    //         quantity: 20, 
-    //     },
-    //     {
-    //         refrenceNumber: refrenceNumber
-    //     }
-    //   ]
-    
-    
-      
 
 })
 

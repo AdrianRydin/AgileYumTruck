@@ -26,7 +26,7 @@ main{
 
 
 .boxtop{
-    width: 80%;
+    width: 60%;
 }
 .confirmation-text{
     font-size: 1.3rem;
@@ -52,7 +52,6 @@ main{
     background-color: #DD4A4A;
     border-radius: 5px;
     width: 90%;
-    height:60px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -60,10 +59,16 @@ main{
 .new-order-button:hover{
     background-color: #8a2f2f;
 }
+.new-order-button h1{
+    text-align: center;
+}
+.new-order-button a{
+    text-decoration: none;
+    color: white;
+}
 
 .receipt-button{
     width: 90%;
-    height:60px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
