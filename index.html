@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/styling/navigation.css"></link>
     <link rel="stylesheet" href="./src/styling/index.css" />
-    <script type="module" src="./src/js/script.js"></script>
     <script type="module" src="./src/js/utils/navigation.js"></script>
+    <script type="module" src="./src/js/slideshow.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,7 @@
     
         <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="./public/images/logoVariant1small.png" alt="Yum Yum Gimme Sum Header logo">
+            <img class="header__logo" src="./public/images/logoVariant1small.png">
         </a>
         <i id="header__menu"class="header__menu fa-solid fa-bars"></i>
     </header>
@@ -34,7 +34,7 @@
     <nav aria-label="overlay for navigation"  class="overlay">
         <section class="header__overlay">
             <a href="#">
-                <img class="overlay__logo" src="./public/images/logo2.png" alt="Yum Yum Gimme Sum Overlay logo">
+                <img class="overlay__logo" src="./public/images/logo2.png">
             </a>
             <i class="header__cross fa-solid fa-xmark"></i>
         </section>
@@ -61,7 +61,7 @@
     
     <main>
       <section class="todays-business-hours">
-        <h1 class="todays-business-hours__text" id="todays-business-hours"></h1>
+        <h1 class="todays-business-hours__text">ÖPPET IDAG:</h1>
       </section>
       <img
         class="img-full-width"
@@ -100,7 +100,7 @@
     </main>
     <footer class="footer" id="footer">
       <div class="footer__container">
-        <img class="footer__logo" src="./public/images/logo.png" alt="Yum Yum Gimme Sum Footer logo" />
+        <img class="footer__logo" src="./public/images/logo.png" alt="" />
         <h2 class="footer__heading">KONTAKTA OSS</h2>
         <address class="footer__address">
           <p class="footer__text">073 - 213 4255</p>
@@ -116,7 +116,7 @@
           >
             <img
               class="footer__icon"
-              src="./public/images/footer/instagram.png"
+              src="./public/images/footer/tiktok.png"
               alt="Tiktok icon"
             />
           </a>
@@ -127,7 +127,7 @@
           >
             <img
               class="footer__icon"
-              src="./public/images/footer/tiktok.png"
+              src="./public/images/footer/instagram.png"
               alt="Instagram icon"
             />
           </a>
