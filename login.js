@@ -52,9 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
       (user) => user.username === username && user.password === password
     );
 
+    //ändrade raden, här Sparar den inloggade användaren i localStorage så att inloggningsstatus bevaras på olika sidor
     if (user) {
-      localStorage.setItem(`${user.username}`, JSON.stringify(user));
-      alert(`Välkommen, ${user.username}! Du är inloggad som ${user.role}.`);
+      localStorage.setItem("loggedInUser", JSON.stringify(user));
+      alert(`Välkommen, ${user.username}!`);
 
       sessionStorage.setItem("status", "loggedIn");
 
@@ -70,6 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     alert("Du fortsätter som gäst.");
     localStorage.setItem("loggedInUser", JSON.stringify({ role: "guest" }));
-    window.location.assign("/index.html");
+    window.location.assign("../index.html");
   });
 });

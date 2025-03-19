@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Agile Yum Yum Truck - Kundvagn</title>
-    <script type="module" src="/src/js/utils/oData.js"></script>
-    <script type="module" src="/src/js/modules/kundvagn.js"></script>
-    <script type="module" src="/src/js/utils/navigation.js"></script>
+    <script type="module" src="./js/utils/oData.js"></script>
+    <script type="module" src="./js/kundvagn.js"></script>
+    <script type="module" src="./js/utils/navigation.js"></script>
 </head>
 <body>
     
@@ -37,7 +37,7 @@
     
         <section class="overlay__list">
         <li class="overlay__list-links">
-            <a class="overlay__list-items" href="../public/index.html">Hem</a>
+            <a class="overlay__list-items" href="../index.html">Hem</a>
         </li>
         <li class="overlay__list-links">
             <a class="overlay__list-items" href="mat.meny.html">Vår mat</a>
@@ -50,7 +50,7 @@
         </li>
         
         <li class="overlay__list-links">
-            <a class="overlay__list-items" href="login.html">Logga in</a>
+            <a id="login-link" class="overlay__list-items" href="login.html">Logga in</a>
         </li>
         </section>
     </nav>
@@ -82,8 +82,8 @@
         <aside class="order-payment-container">
             <p class="order-payment-title">Välj betalningsmetod</p>
             <section class="payment-methods">
-                <span><img class="payment-logos" src="/public/images/Klarna_Payment_Badge.svg.webp" alt=""></span>
-                <span><img class="payment-logos" src="/public/images/swish logo primary SVG.svg" alt=""></span>
+                <span><img class="payment-logos" src="../public/images/Klarna_Payment_Badge.svg.webp" alt=""></span>
+                <span><img class="payment-logos" src="../public/images/swish logo primary SVG.svg" alt=""></span>
                 <span><i class="fa-solid fa-credit-card"></i></span>
             </section>
         </aside>
