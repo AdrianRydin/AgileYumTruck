@@ -1,7 +1,7 @@
 let i = 0;
 
 export function initSlideshow() {
-  setInterval(changeImg, 4000);
+  setInterval(changeImg, 7000);
 }
 
 function changeImg() {
@@ -18,8 +18,7 @@ function changeImg() {
 function getImgArr() {
   const images = [];
   for (let i = 1; i < 6; i++) {
-    images.push(`../public/images/landing/landingFood${i}.png`);
-    console.log(images);
+    images.push(`./public/images/landing/landingFood${i}.png`);
   }
   return images;
 }

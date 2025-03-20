@@ -84,6 +84,41 @@ function updateQuantity(index, change) {
 
 // tömma hela kundvagnen när "TAKE MY MONEY!" knappen klickas
 document.getElementById("clear-cart").addEventListener("click", () => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Kundvagnen är tom!");
+        return;
+    }
+
+    // Räkna totala antal produkter i beställningen
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    // Bestäm ETA baserat på antal produkter
+    let eta;
+    if (totalItems <= 3) {
+        eta = 10;
+    } else if (totalItems >= 4 && totalItems <= 9) {
+        eta = 20;
+    } else {
+        eta = 35;
+    }
+
+    // Generera unikt referensnummer
+    const referenceNumber = "#" + Math.random().toString(36).substr(2, 9).toUpperCase();
+
+    // Skapa orderinformationen
+    const orderDetails = {
+        date: new Date().toLocaleString(),
+        eta: eta,
+        reference: referenceNumber,
+        items: cart // Sparar hela kundvagnen för kvittot
+    };
+
+    // Endast skicka ordern vidare till kvittot, utan att spara för inloggad användare
+    localStorage.setItem("currentOrder", JSON.stringify(orderDetails));
+
+    // Rensa kundvagnen och gå direkt till kvittot
     localStorage.removeItem("cart");
-    window.location.href = "order-confirmation.html";
+    window.location.href = "receipt.html";
 });
