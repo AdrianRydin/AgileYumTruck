@@ -1,4 +1,4 @@
-export function displayBusinessHours() {
+function displayBusinessHours() {
   const businessHoursElem = document.querySelector('#todays-business-hours');
   const businessHours = getRightBusinessHours();
   businessHoursElem.textContent = `ÖPPET IDAG ${businessHours}`;
@@ -25,3 +25,5 @@ function getTodaysDay() {
   const todaysDate = new Date();
   return todaysDate.getDay();
 }
+
+export default displayBusinessHours();
