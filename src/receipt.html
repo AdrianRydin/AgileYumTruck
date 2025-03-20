@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
     <script src="./js/utils/navigation.js" type="module"></script>
+    <script src="./js/modules/receipt.js" type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -61,49 +62,22 @@
         <h1 class="receipt__heading">KVITTO</h1>
         <h2 class="receipt__id">#4kjwsdf234k</h2>
         <div class="ordered-items">
-          <div class="ordered">
-            <div class="ordered__top-container">
-              <h3 class="ordered__name">KARLSTAD</h3>
-              <h3 class="ordered__price">27 SEK</h3>
-            </div>
-            <p class="ordered__amount">3 stycken</p>
+          <!-- Template for ordered items (hidden by default) -->
+          <div class="ordered template" style="display: none;">
+              <div class="ordered__top-container">
+                  <h3 class="ordered__name"></h3>
+                  <h3 class="ordered__price"></h3>
+              </div>
+              <p class="ordered__amount"></p>
           </div>
-          <div class="ordered">
-            <div class="ordered__top-container">
-              <h3 class="ordered__name">HO CHI MINH</h3>
-              <h3 class="ordered__price">18 SEK</h3>
-            </div>
-            <p class="ordered__amount">2 stycken</p>
-          </div>
-          <div class="ordered">
-            <div class="ordered__top-container">
-              <h3 class="ordered__name">KINGSTON</h3>
-              <h3 class="ordered__price">18 SEK</h3>
-            </div>
-            <p class="ordered__amount">2 stycken</p>
-          </div>
-          <div class="ordered">
-            <div class="ordered__top-container">
-              <h3 class="ordered__name">SWEET CHILI DIP</h3>
-              <h3 class="ordered__price">19 SEK</h3>
-            </div>
-            <p class="ordered__amount">1 stycken</p>
-          </div>
-          <div class="ordered">
-            <div class="ordered__top-container">
-              <h3 class="ordered__name">GUACAMOLE DIP</h3>
-              <h3 class="ordered__price">19 SEK</h3>
-            </div>
-            <p class="ordered__amount">1 stycken</p>
-          </div>
-        </div>
-        <div class="receipt__total">
-          <div class="receipt__total-left-container">
+      </div>
+      <div class="receipt__total">
+        <div class="receipt__total-left-container">
             <h2 class="receipt__total-heading">TOTALT</h2>
             <p class="receipt__vat">inkl 20% moms</p>
-          </div>
-          <h3 class="receipt__total-price">101 SEK</h3>
         </div>
+        <h3 class="receipt__total-price">0 SEK</h3> <!-- Ensure this exists -->
+    </div>
       </article>
       <a href="mat.meny.html" class="order-button-container"><button class="order-button">GÖR EN NY BESTÄLLNING</button></a>
     </main>
