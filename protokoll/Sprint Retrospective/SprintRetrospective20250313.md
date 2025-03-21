@@ -47,5 +47,3 @@ Var och en svarar på frågorna nedan, 1 person antecknar
 - Jag ska fortsätta arbeta på ett effektivt sätt.
 
 ### Övrig diskussion
-
-Har ni diskuterat någonting mer?
