@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    letter-spacing: 1.5px;
+    background-color: #605858;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 480px; /* Ensures it stays within mobile width */
+    margin: 0 auto; /* Centers on mobile screens */
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 2px solid white;
+}
+
+/* Title */
+.meny__title {
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: start;
+    padding: 10px;
+}
+
+.mat__menu-logo{
+    width: 75px;
+}
+
+/* Food container */
+.food_item--1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+/* Image & Counter - Side by Side */
+.food_item--1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allows wrapping if needed on smaller screens */
+}
+
+/* Image */
+.food_item-img {
+    width: 70%; /* Adjusts image size to be bigger */
+    max-width: 250px; /* Prevents it from becoming too big */
+    height: auto;
+    flex-grow: 2; /* Makes the image take more space */
+}
+
+/* Counter */
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    flex-grow: 1; /* Allows the counter to be smaller */
+    max-width: 100px; /* Controls the counter size */
+}
+
+/* Buttons inside counter */
+.counter button {
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.increment, .decrement {
+    font-size: 20px;
+ 
+}
+
+button:hover {
+    background-color:gold;
+}
+
+/* Description Section */
+.food_item--1--discription {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+
+.food__text {
+    font-size: 18px;
+    color: white;
+    text-align: start;
+}
+
+/* Add button */
+.adding__item {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* seconde item*/
+.food_item--2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid white; 
+}
+
+/* Image & Counter - Side by Side */
+.food_item--2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Allows wrapping if needed on smaller screens */
+}
+
+.food_item--2--discription {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the left */
+    width: 100%;
+    gap: 1rem; /* Space between button and text */
+}
+
+/* Cart container to position badge correctly */
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling the cart image */
+.kundvagn {
+    width: 40px; /* Adjust size as needed */
+}
+
+/* Badge styling */
+#cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    display: none; /* Hide by default */
+}
+
+.fa-leaf {
+    color: rgb(75, 212, 75);
+    margin-top: 0.3rem;
+}
+.fa-pepper-hot {
+    color: rgb(184, 31, 31);
+    margin-top: 0.3rem;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    .food_item--1 {
+        flex-wrap: nowrap; /* Allows image and counter to move below if needed */
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .food_item-img {
+        width: 75%;
+        max-width: 260px;
+    }
+
+    .counter {
+        max-width: 90px; /* Makes the counter smaller */
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .counter button {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+
+    .food_item--1--discription {
+        gap: 1rem;
+    }
+
+    .food__text {
+        font-size: 16px;
+    }
+
+    .adding__item {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+

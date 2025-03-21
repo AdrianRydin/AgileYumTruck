@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login html</title>
+    <link rel="stylesheet" href="./styling/navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../src/styling/index.css" />
+    <link rel="stylesheet" href="../src/styling/login.css" />
+    <script src="./js/utils/oData.js" type="module"></script>
+    <script src="./js/utils/navigation.js" type="module"></script>
+    <script src="../login.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html">
+        <img class="header__logo" src="../public/images/whiteLogo2.png" />
+      </a>
+      <i id="header__menu" class="header__menu fa-solid fa-bars"></i>
+    </header>
+
+    <nav aria-label="overlay for navigation" class="overlay">
+      <section class="header__overlay">
+        <a href="../index.html">
+          <img class="overlay__logo" src="../public/images/logo2.png" />
+        </a>
+        <i class="header__cross fa-solid fa-xmark"></i>
+      </section>
+
+      <section class="overlay__list">
+        <li class="overlay__list-links">
+          <a class="overlay__list-items" href="../index.html">Hem</a>
+        </li>
+        <li class="overlay__list-links">
+          <a class="overlay__list-items" href="mat.meny.html">Vår mat</a>
+        </li>
+        <li class="overlay__list-links">
+          <a class="overlay__list-items" href="../index.html#footer"
+            >Kontakta oss</a
+          >
+        </li>
+        <li class="overlay__list-links">
+          <a class="overlay__list-items" href="#">Om oss</a>
+        </li>
+
+        <li class="overlay__list-links">
+          <a id="login-link" class="overlay__list-items" href="./login.html">Logga in</a>
+        </li>
+      </section>
+    </nav>
+
+    <h1>Välkommen tillbaka</h1>
+    <div class="form-control">
+      <form action="#">
+        <label for="username">USERNAME</label>
+        <input type="text" placeholder="Username" required />
+        <label for="password">PASSWORD</label>
+        <input type="password" placeholder="Password" required />
+        <div class="form-links">
+          <a href="#" class="register-link">Registrera dig</a>
+          <a href="#" class="forgot-password-link">Glömt lösenord?</a>
+        </div>
+        <button class="btn btn-login">Logga in</button>
+        <button class="btn btn-guest">Fortsätt utan att logga in</button>
+      </form>
+    </div>
+  </body>
+</html>
